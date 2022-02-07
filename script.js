@@ -47,7 +47,7 @@ function updateProgress() {
 }
 
 function setProgress(e) {
-  const newTime = e.offSetX / progressRange.offsetWidth
+  const newTime = e.offsetX / progressRange.offsetWidth
   progressBar.style.width = `${newTime * 100}%`
   video.currentTime = newTime * video.duration
 }
